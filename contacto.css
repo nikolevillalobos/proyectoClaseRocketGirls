@@ -1,0 +1,314 @@
+/*Estilos generales*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --rosa: #f4d4d8;
+    --verdeoscuro: #537F52;
+    --naranja: #F48F2A;
+    --beige: #F8F6F6;
+}
+
+
+section{
+    margin-bottom:  100px;;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--beige);
+}
+
+h2{
+    text-align: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    justify-content: center;
+}
+
+p{
+    text-align: center;
+    justify-content: center;
+}
+
+textarea{
+
+    border-radius: 20px;
+    width: 500px;
+    height: 50px;
+    decoration: none
+}
+
+
+/* menu estilos*/
+
+.avisos{
+    background-color:var(--naranja);
+    color: white;
+    padding: 5px;
+}
+
+.link-menu{
+    background-color: white;
+}
+
+nav ul li{
+    display: inline;
+    
+    }
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+}
+
+.menulink{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBEBEB;
+    padding: 10px;
+}
+
+.menumedio{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ position: relative;
+ padding: 20px;
+
+}
+
+
+.menu {
+        position: fixed; /* Hacer que todo el menú sea fijo */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000; /* Asegurarse de que el menú esté por encima de otros elementos */
+         }
+   
+
+
+.menu .iconos-compra{
+    margin-left: auto;
+    align-items: left;
+    
+}
+.iconos-compra img{
+    width: 20px;
+    margin-right: 5px; 
+}
+
+.logo{
+   position: absolute;
+   left: 50%;
+    transform: translateX(-50%);
+   
+}
+.logo img{
+   
+    width: 120px;
+    height: auto;
+}
+.link-menu nav ul{
+    display: flex;
+}
+
+
+
+
+/*Info estilos*/
+.info{
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos equitativamente con espacio alrededor */
+    align-items: center;
+}
+
+.info-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-card{
+    background-color: #F48F2A;
+    color: white;
+    border: black solid;
+    border-radius: 50px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+button{
+    border-radius: 20px;
+    padding: 10px;
+    width: 150px;
+    background-color:var(--rosa);
+}
+
+.form{
+display: block;
+justify-content: center;
+background-color: var(--verdeoscuro) ;
+padding: 20px;
+width: auto;
+height: 500px;
+padding-left: 100px;
+padding-top: 100px;
+}
+
+.form label{
+    display: block;
+    color: white;
+}
+
+.form button{ display: block;}
+
+.form input{
+    border-radius: 20px;
+    width: 500px;
+    height: 50px;
+}
+
+.form-titulo{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.form-titulo img{ 
+    width: 50px;
+}
+
+/*Direccion estilos*/
+
+#map {
+	height: 500px; /* Altura del mapa */
+    width: 50%; /* Ancho del mapa */
+    margin: 0 auto;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    
+}
+.link-footer, .socialmedia, .texto-footer {
+    margin-bottom: 10px; /* Ajusta el espacio entre cada sección si es necesario */
+}
+
+
+/*Seguir comprando estilos*/
+
+.seguir-comprando{
+    text-align: center;
+    display: column;
+    justify-content: center;
+   
+}
+
+.seguir-comprando button{
+    margin-top: 50px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    /*Estilos responsive*/
+
+    /*menu*/
+
+    .menulink {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+   
+/*info estilos*/
+    .info-container{
+       
+       flex-direction: column;
+     
+       
+    }
+
+    .info-card{
+        margin-bottom: 20px;
+    }
+
+    .form input{
+        width: 400px;
+    }
+
+    .form textarea{
+        width: 400px;
+    }
+
+/*direccion estilos*/
+    #map{
+       height: 300px;
+       width: 350px;
+    }
+
+    .direccion{
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*footer estilos*/
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Alinea el texto al centro si es necesario */
+    }
+    
+    .link-footer, .socialmedia, .texto-footer {
+        margin-bottom: 10px; /* Ajusta el espacio entre cada sección si es necesario */
+    }
+
+    .form{
+        margin: 0%;
+    }
+
+    .form input{ 
+        width: 300px;
+    }
+    .form textarea {
+        width: 300px;
+    }
+}
+
+
+

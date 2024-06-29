@@ -1,0 +1,570 @@
+/*estilos generales*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* variables de color*/
+:root{
+--verde: #67C6B4;
+--rosa: #f4d4d8;
+--naranja: #F48F2A;
+--beige:#F0E9DA;
+--rosahover: #F7AA9C;
+--verdeoscuro:#537F52;
+
+}
+
+input{
+    display: flex;
+    border-radius: 20px;
+    width: 450px;
+    height:  40px;
+    
+} 
+
+button{
+    border: none;
+    border-radius: 20px;
+    background: var(--verde);
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+    width: 240px;
+    height: 40px;
+    
+    }
+
+   button:hover{
+background-color: var(--verdeoscuro);
+   }
+
+img{
+    width: 428px;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+}
+
+h2{
+    
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F6F6;
+}
+
+
+/* menu estilos*/
+
+.avisos{
+   
+    background-color: #F48F2A;
+    color: white;
+    padding: 5px;
+
+}  
+
+.link-menu{
+    background-color: white;
+}
+
+nav ul li{
+    display: inline;
+    
+    }
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+}
+
+.menulink{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBEBEB;
+    padding: 10px;
+}
+
+.menumedio{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ position: relative;
+ padding: 20px;
+
+}
+
+
+    .menu {
+        position: fixed; /* Hacer que todo el menú sea fijo */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000; /* Asegurarse de que el menú esté por encima de otros elementos */
+    }
+   
+
+
+.menu .iconos-compra{
+    margin-left: auto;
+    align-items: left;
+    
+}
+.iconos-compra img{
+    width: 20px;
+    margin-right: 5px; 
+}
+
+.logo{
+   position: absolute;
+   left: 50%;
+    transform: translateX(-50%);
+   
+}
+.logo img{
+   
+    width: 120px;
+    height: auto;
+}
+.link-menu nav ul{
+    display: flex;
+}
+
+
+
+
+
+.botonsecundario{
+    border: black solid 2px;
+    border-radius: 20px;
+    background: var(--rosa);
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+
+
+}
+
+.botonsecundario:hover{
+    background-color: #F7AA9C;
+}
+
+
+
+
+ 
+
+/*Hero Estilos*/
+
+.hero {
+
+padding-top: 200px;
+position: relative;
+max-width: 100%;
+margin: 5%;
+padding-bottom: 100px;
+display: flex;
+justify-content: center;
+}
+
+.hero img{
+display: flex;
+width: 90%;
+height: 90%;
+object-fit: cover;
+border-radius: 50px;
+border: 7px black  solid ;
+align-items: center;
+justify-content: center;
+}
+
+
+.hero-content{
+    text-align: left;
+    position: absolute;
+  top: 35%;
+  left: 5%;
+  transform: translateY(-50%); /* Centra verticalmente el texto */
+  color: rgb(0, 0, 0);
+ 
+  padding: 20px;
+  border-radius: 10px;
+  
+
+}
+
+.hero-content h1{
+    text-align: left;
+}
+
+.hero-content button{
+    margin-top: 20px;
+}
+
+
+.hero-content p{
+    width: 70%
+}
+
+/*Nueva coleccion estilos*/
+.nuevaColeccion h3{
+    text-align: center;
+    font-weight: lighter;
+}
+
+.nuevaColeccion h2{
+    text-align: center;
+}
+
+/* Articulos estilos*/
+.texto-naranja{
+    color: #F48F2A;
+    font-weight: bold;
+}
+
+.descuento-texto{
+    color: gray;
+    font-weight: lighter;
+    text-decoration: line-through;
+
+}
+
+
+.descuentos h2{
+    text-align: center;
+}
+
+
+.articulo-container{
+    display: flex;
+}
+.articulo-card{
+
+    margin: 10px;
+}
+
+.articulo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulo-card{
+    width: 300px;
+    margin: 10px; /* Espacio adicional alrededor de cada card */
+    padding: 20px;
+    align-items: center;
+  
+    cursor: pointer;
+    
+}
+
+.articulo-card img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.articulo-card .reseñas{
+    display: flex;
+    margin-right: 40px;
+   
+}
+
+.reseñas-container{ 
+    display: flex;
+   margin-bottom : 20px;
+    margin-top: 20px;
+    color: gray;
+}
+
+.articulo-card .reseñas img{
+    width: 20px
+}
+
+.articulo-content{
+    display: block;
+    align-items: center;
+   
+}
+.descuentos{ margin-bottom: 100px;}
+
+/*Beneficios estilos*/
+
+.Beneficios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    border: black solid 2px;
+    border-radius: 40px;
+    background-color: var(--beige);
+    width: 90%;
+    margin-bottom: 100px;
+}
+.beneficios-card{
+    width: 300px;
+    margin: 10px; /* Espacio adicional alrededor de cada card */
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.beneficios-card img{
+    max-width: 35%;
+    height: auto;
+    
+}
+
+.contenedor-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Correos estilos*/
+
+.correo h2{
+    text-align: center;
+}
+
+
+.correo{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 100px;
+        
+}
+
+.correo form button{
+margin-top: 50px;
+}
+
+.titulo-img{
+display: flex;
+align-items: center;
+}
+.titulo-img img{
+width: 50px;
+margin: 10px;
+}
+
+/*Colecciones estilos */
+
+.colecciones{ margin-bottom: 100px;}
+
+.coleccion-container{
+    display: flex;
+  
+   
+}
+.colecciones h2{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.coleccion-card{
+    width: 100%;
+    margin: 10px; /* Espacio adicional alrededor de cada card */
+    padding: 20px; /* Opcional: para contenido interno */
+    box-sizing: border-box;
+    border-radius: 29px;
+}
+
+
+.coleccion-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.coleccion-content h3 {
+    margin: 10px 0;
+}
+
+.coleccion-content p {
+    margin: 0;
+}
+.titulo-img{
+    justify-content: center;
+}
+
+
+/*Footer estilos*/
+footer{
+    
+}   
+.socialmedia{
+
+    margin-right: 50px;
+}
+
+.socialmedia img{
+    width: 25px;
+    outline: none;
+  
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.nuevaColeccion{
+    margin-bottom: 100px;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+
+@media (max-width:768px) {
+
+    /*hero estilos*/
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content{display: none;}
+   
+    .avisos {
+        display: block;
+        background-color: #F48F2A;
+        padding: 0.5rem;
+        justify-content: center;
+    }
+
+    .articulo-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+    }
+
+    /*Beneficios estilos*/
+
+    .Beneficios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+       
+    }
+
+    /* Colecciones estilos*/
+
+    .colecciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .coleccion-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+       
+    }
+
+   /*Footer estilos*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Alinea el texto al centro si es necesario */
+}
+
+.link-footer, .socialmedia, .texto-footer {
+    margin-bottom: 10px; /* Ajusta el espacio entre cada sección si es necesario */
+}
+
+    
+
+        .hero {
+            height: auto;
+            padding: 2rem 1rem;
+            display: flex;
+            
+           
+            
+        }
+
+        .hero img{
+            margin-top: 150px; 
+        }
+    
+        .hero-content {
+            padding: 2rem 1rem;
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .hero h1 {
+            font-size: 2rem;
+
+        }
+    
+        .hero p {
+            font-size: 1rem;
+            text-align: center;
+        }
+    
+        .hero button {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+        }
+
+
+        footer nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        footer .socialmedia {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menulink {
+            display: none;
+            flex-direction: column;
+            gap: 0;
+            position: absolute;
+            top: 3.5rem;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+        }
+
+       
+
+}
+
+

@@ -1,0 +1,291 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* variables de color*/
+:root{
+--verde: #67C6B4;
+--rosa: #f4d4d8;
+--naranja: #F48F2A;
+--beige:#F0E9DA;
+--rosahover: #F7AA9C;
+--verdeoscuro:#537F52;
+
+}
+
+input{
+    display: flex;
+    border-radius: 20px;
+    width: 450px;
+    height:  40px;
+    
+} 
+
+button{
+    border: none;
+    border-radius: 20px;
+    background: var(--verde);
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+    width: 240px;
+    height: 40px;
+    
+    }
+
+   button:hover{
+background-color: var(--verdeoscuro);
+   }
+
+img{
+    width: 428px;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+}
+
+h2{
+    
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F6F6;
+}
+
+
+/* menu estilos*/
+
+.avisos{
+   
+    background-color: #F48F2A;
+    color: white;
+    padding: 5px;
+
+}  
+
+.link-menu{
+    background-color: white;
+}
+
+nav ul li{
+    display: inline;
+    
+    }
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+}
+
+.menulink{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBEBEB;
+    padding: 10px;
+}
+
+.menumedio{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ position: relative;
+ padding: 20px;
+
+}
+
+
+    .menu {
+        position: fixed; /* Hacer que todo el menú sea fijo */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000; /* Asegurarse de que el menú esté por encima de otros elementos */
+    }
+   
+
+
+.menu .iconos-compra{
+    margin-left: auto;
+    align-items: left;
+    
+}
+.iconos-compra img{
+    width: 20px;
+    margin-right: 5px; 
+}
+
+.logo{
+   position: absolute;
+   left: 50%;
+    transform: translateX(-50%);
+   
+}
+.logo img{
+   
+    width: 120px;
+    height: auto;
+}
+.link-menu nav ul{
+    display: flex;
+}
+
+
+
+/*Nueva coleccion estilos*/
+.nuevaColeccion h3{
+    text-align: center;
+    font-weight: lighter;
+}
+
+.nuevaColeccion h2{
+    text-align: center;
+}
+
+/* Articulos estilos*/
+.texto-naranja{
+    color: #F48F2A;
+    font-weight: bold;
+}
+
+.descuento-texto{
+    color: gray;
+    font-weight: lighter;
+    text-decoration: line-through;
+
+}
+
+
+.descuentos h2{
+    text-align: center;
+}
+
+
+.articulo-container{
+    display: flex;
+}
+.articulo-card{
+
+    margin: 10px;
+}
+
+.articulo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulo-card{
+    width: 300px;
+    margin: 10px; /* Espacio adicional alrededor de cada card */
+    padding: 20px;
+    align-items: center;
+  
+    cursor: pointer;
+    
+}
+
+.articulo-card img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.articulo-card .reseñas{
+    display: flex;
+    margin-right: 40px;
+   
+}
+
+.reseñas-container{ 
+    display: flex;
+   margin-bottom : 20px;
+    margin-top: 20px;
+    color: gray;
+}
+
+.articulo-card .reseñas img{
+    width: 20px
+}
+
+.articulo-content{
+    display: block;
+    align-items: center;
+   
+}
+.descuentos{ margin-bottom: 100px;}
+
+/*Footer estilos*/
+footer{
+    
+}   
+.socialmedia{
+
+    margin-right: 50px;
+}
+
+.socialmedia img{
+    width: 25px;
+    outline: none;
+  
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.nuevaColeccion{
+    margin-bottom: 50px;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.coleccionTodos{
+    margin-top: 200px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+
+    .menulink{display: none;}
+
+    .articulo-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+    }
+
+     /*Footer estilos*/
+ footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Alinea el texto al centro si es necesario */
+}
+    
+}
+
